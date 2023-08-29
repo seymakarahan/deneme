@@ -60,17 +60,7 @@ namespace FormUygulamasi
         {
             if(checkTopla.Checked == true)
             {
-                int a1 = Convert.ToInt32(textBox1.Text);
-                int a2 = Convert.ToInt32(textBox2.Text);
-
-                Matematik myClass = new Matematik();
-
-               
-
-                int _Cevap = myClass.fn_Topla(a1, a2);
-
-                //int Sonuc = a1 + a2;
-                label3.Text = _Cevap.ToString();
+                
 
             }
             else
