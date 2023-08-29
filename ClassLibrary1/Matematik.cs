@@ -15,5 +15,9 @@ namespace ClassLibrary1
         {
             return _Sayi1 + _Sayi2;
         }
+        public int fn_Bolme(int _Sayi1, int _Sayi2)
+        {
+            return _Sayi1 / _Sayi2;
+        }
     }
 }

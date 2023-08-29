@@ -98,10 +98,13 @@ namespace FormUygulamasi
                     {
                         if (checkBox4.Checked == true)
                         {
+
                             int a1 = Convert.ToInt32(textBox1.Text);
                             int a2 = Convert.ToInt32(textBox2.Text);
-                            int Sonuc = a1/a2;
-                            label3.Text = Sonuc.ToString();
+                            Matematik myClass = new Matematik();
+
+                            int _Cevap = myClass.fn_Bolme(a1, a2);
+                            label3.Text = _Cevap.ToString();
 
                         }
                     }
