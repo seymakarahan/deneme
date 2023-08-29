@@ -11,7 +11,7 @@ namespace ClassLibrary1
     /// </summary>
     public class requestfntopla
     {
-        public int sayi1 { get; set; }
-        public int sayi2 { get; set; }
+        public string    sayi1 { get; set; }
+        public string sayi2 { get; set; }
     }
 }

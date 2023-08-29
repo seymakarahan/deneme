@@ -30,7 +30,7 @@ namespace ClassLibrary1
             {
                
 
-                abc = v_Gelen.sayi1 + v_Gelen.sayi2;              
+                abc =int.Parse( v_Gelen.sayi1) +int.Parse( v_Gelen.sayi2);              
 
                 _Gidecek._Yanit = Durum.Basarili;
                 _Gidecek._HataAciklama = "";
@@ -43,7 +43,7 @@ namespace ClassLibrary1
                 _Gidecek = new ToplamaIslemSonuc();
                 _Gidecek._Yanit = Durum.HataVar;
                 _Gidecek._HataAciklama = ex.ToString();
-                _Gidecek._Yanit = 0;
+                _Gidecek._Cevap = 0;
                 #endregion
 
             }

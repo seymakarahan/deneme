@@ -60,7 +60,28 @@ namespace FormUygulamasi
         {
             if(checkTopla.Checked == true)
             {
+                string a1 = textBox1.Text;
+                string a2 = textBox2.Text;
+               
+                Matematik myClass = new Matematik();
                 
+                //Request Class'ı Dolduruldu.
+                requestfntopla _Gidecek = new requestfntopla();
+                _Gidecek.sayi1 = a1;
+                _Gidecek.sayi2 = a2;
+
+
+
+                ToplamaIslemSonuc gelen = myClass.fn_Topla(_Gidecek);
+                if(gelen._Yanit == Durum.HataVar)
+                {
+                    MessageBox.Show("" + gelen._HataAciklama, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }else
+                {
+                    label3.Text = gelen._Cevap.ToString();
+                }
+
 
             }
             else
