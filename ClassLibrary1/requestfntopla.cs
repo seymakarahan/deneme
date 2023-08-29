@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class requestfntopla
     {
         public int sayi1 { get; set; }

@@ -11,13 +11,24 @@ namespace ClassLibrary1
 
         public Matematik() { }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="v_Gelen">Değerleri Doldur Yolla</param>
+        /// <returns>Hata varsa açıklamayı mutlaka ekrana yazdır</returns>
         public ToplamaIslemSonuc fn_Topla(requestfntopla v_Gelen)
         {
+            #region Burada değişkenleri Tanımladım
+
             ToplamaIslemSonuc _Gidecek = new ToplamaIslemSonuc();
+
+            int abc = 0;
+
+            #endregion
 
             try
             {
-                int abc = 0;
+               
 
                 abc = v_Gelen.sayi1 + v_Gelen.sayi2;              
 
@@ -28,10 +39,13 @@ namespace ClassLibrary1
             }
             catch (Exception ex)
             {
+                #region Hatayı yakalayıp geri döndüm
                 _Gidecek = new ToplamaIslemSonuc();
                 _Gidecek._Yanit = Durum.HataVar;
                 _Gidecek._HataAciklama = ex.ToString();
                 _Gidecek._Yanit = 0;
+                #endregion
+
             }
 
             return _Gidecek;
