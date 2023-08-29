@@ -29,7 +29,7 @@ namespace FormUygulamasi
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkTopla = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,21 +42,21 @@ namespace FormUygulamasi
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // checkTopla
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(444, 128);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(84, 20);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Toplama";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkTopla.AutoSize = true;
+            this.checkTopla.Location = new System.Drawing.Point(444, 128);
+            this.checkTopla.Margin = new System.Windows.Forms.Padding(4);
+            this.checkTopla.Name = "checkTopla";
+            this.checkTopla.Size = new System.Drawing.Size(84, 20);
+            this.checkTopla.TabIndex = 0;
+            this.checkTopla.Text = "Toplama";
+            this.checkTopla.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(49, 171);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace FormUygulamasi
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(228, 171);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 2;
@@ -95,7 +95,7 @@ namespace FormUygulamasi
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(444, 158);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(79, 20);
             this.checkBox2.TabIndex = 5;
@@ -106,7 +106,7 @@ namespace FormUygulamasi
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(444, 186);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(77, 20);
             this.checkBox3.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace FormUygulamasi
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(444, 215);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(68, 20);
             this.checkBox4.TabIndex = 7;
@@ -137,7 +137,7 @@ namespace FormUygulamasi
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(629, 167);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 12;
@@ -170,8 +170,8 @@ namespace FormUygulamasi
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.checkTopla);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -181,7 +181,7 @@ namespace FormUygulamasi
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkTopla;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;

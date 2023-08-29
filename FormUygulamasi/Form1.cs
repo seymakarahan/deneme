@@ -49,14 +49,26 @@ namespace FormUygulamasi
 
         }
 
+        private int fnTopla(int _Sayi1, int _Sayi2)
+        {
+            int sonuc = 0;
+
+            sonuc = _Sayi1 + _Sayi2;
+
+            return sonuc;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if(checkTopla.Checked == true)
             {
                 int a1 = Convert.ToInt32(textBox1.Text);
                 int a2 = Convert.ToInt32(textBox2.Text);
-                int Sonuc = a1 + a2;
-                label3.Text = Sonuc.ToString();
+
+                int _Cevap = fnTopla(a1, a2);
+
+                //int Sonuc = a1 + a2;
+                label3.Text = _Cevap.ToString();
 
             }
             else
