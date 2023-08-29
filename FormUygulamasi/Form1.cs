@@ -57,6 +57,10 @@ namespace FormUygulamasi
 
             return sonuc;
         }
+        private int fnCikar(int _Sayi1, int _Sayi2)
+        {
+            return _Sayi1 - _Sayi2;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -77,8 +81,9 @@ namespace FormUygulamasi
                 {
                     int a1 = Convert.ToInt32(textBox1.Text);
                     int a2 = Convert.ToInt32(textBox2.Text);
-                    int Sonuc = a1 - a2;
-                    label3.Text = Sonuc.ToString();
+
+                    int _Cevap = fnCikar(a1, a2);
+                    label3.Text = _Cevap.ToString();
 
                 }
                 else
