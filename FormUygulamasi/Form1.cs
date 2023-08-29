@@ -80,6 +80,8 @@ namespace FormUygulamasi
                 }else
                 {
                     label3.Text = gelen._Cevap.ToString();
+
+
                 }
 
 
