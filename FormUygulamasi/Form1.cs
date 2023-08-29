@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,14 +50,7 @@ namespace FormUygulamasi
 
         }
 
-        private int fnTopla(int _Sayi1, int _Sayi2)
-        {
-            int sonuc = 0;
-
-            sonuc = _Sayi1 + _Sayi2;
-
-            return sonuc;
-        }
+       
         private int fnCikar(int _Sayi1, int _Sayi2)
         {
             return _Sayi1 - _Sayi2;
@@ -69,7 +63,11 @@ namespace FormUygulamasi
                 int a1 = Convert.ToInt32(textBox1.Text);
                 int a2 = Convert.ToInt32(textBox2.Text);
 
-                int _Cevap = fnTopla(a1, a2);
+                Matematik myClass = new Matematik();
+
+               
+
+                int _Cevap = myClass.fn_Topla(a1, a2);
 
                 //int Sonuc = a1 + a2;
                 label3.Text = _Cevap.ToString();
